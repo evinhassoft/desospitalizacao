@@ -1,0 +1,23 @@
+
+.img-welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-top: 20px;
+  }
+
+  .img-welcome img{
+    position: center;
+    border-radius: 20px;
+    height: 300px;
+    width: 480px;
+  }
+
+  .footer-bar-6 {
+    position: fixed;
+  }
+
+  .card-center text-center{
+    margin-top: 30px;
+  }
