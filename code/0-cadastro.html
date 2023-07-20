@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Cadastro</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="#" class="header-title">Cadastre-se</a>
+        <a href="0-boasvindas.html" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Itens</span></a>
+        <a href="index-pages.html"><i class="fa fa-file"></i><span>Páginas</span></a>
+        <a href="0-boasvindas.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Bem-Vindo</span></a>
+        <a href="https://github.com/evinhassoft/desospitalizacao" target="_blank"><i class="fa fa-code"></i><span>Repositório</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="page-title page-title-fixed">
+        <h1 class="font-26">Junte-se a nós!</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+        
+    <div class="page-content">
+                  
+        <div class="card card-style">
+            <div class="content mb-0">
+                <p>
+                    Faça o seu login ou cadastre-se em nosso app.
+                </p>
+                
+                <div class="divider mb-0"></div>
+                <div class="list-group list-custom-small list-icon-0">
+                  
+                    <a href="#" data-menu="menu-signin">
+                        <i class="fa fa-sign-in-alt color-green-dark"></i>
+                        <span>Login</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="#" data-menu="menu-signup">
+                        <i class="fa fa-sign-out-alt color-green-dark"></i>
+                        <span>Registre-se</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    </a>
+                </div>      
+            </div>  
+        </div>          
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+    
+
+    
+    <!---------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+    <!-- Place all Action Elements and Menus Outside of the page-content class. Starting from here-->
+    <!---------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+  
+        
+    <!---------------->
+    <!---------------->
+    <!--Menu Sign In-->
+    <!---------------->
+    <!---------------->
+    <div id="menu-signin" 
+         class="menu menu-box-modal rounded-m" 
+         data-menu-height="310" 
+         data-menu-width="350">
+        <div class="menu-title">
+            <h1 class="font-24">Login</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+
+        <div class="content mb-0 mt-2">
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-at"></i>
+                <input type="email" class="form-control validate-email" id="form1ac" placeholder="E-mail">
+                <label for="form1ac" class="color-highlight font-11 font-500">E-mail</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(necessário)</em>
+            </div>
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control validate-password" id="form1ad" placeholder="Senha">
+                <label for="form1ad" class="color-highlight font-11 font-500">Senha</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(necessário)</em>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a href="#" data-menu="menu-forgot" class="font-10">Esqueceu sua senha?
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a data-menu="menu-signup" href="#" class="float-end font-10">Crie sua conta</a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-full btn-m shadow-l rounded-s font-600 bg-green-dark mt-4">LOGIN</a>
+        </div>
+    </div>     
+        
+    <!---------------->
+    <!---------------->
+    <!--Menu Sign Up-->
+    <!---------------->
+    <!---------------->
+    <div id="menu-signup" 
+         class="menu menu-box-modal rounded-m" 
+         data-menu-height="375" 
+         data-menu-width="350">
+        <div class="menu-title">
+            <p class="color-highlight">Cadastre-se gratuitamente agora!</p>
+            <h1 class="font-24">Cadastro</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mb-0 mt-2">
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-user"></i>
+                <input type="name" class="form-control validate-name" id="form1acd" placeholder="Nome">
+                <label for="form1acd" class="color-highlight font-11 font-500">Nome</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(necessário)</em>
+            </div>
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-user"></i>
+                <input type="email" class="form-control validate-email" id="form1ace" placeholder="E-mail">
+                <label for="form1ace" class="color-highlight font-11 font-500">E-mail</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(necessário)</em>
+            </div>
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control validate-password" id="form1adf" placeholder="Senha">
+                <label for="form1adf" class="color-highlight font-11 font-500">Senha</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(necessário)</em>
+            </div>
+            <p class="text-center pb-0 mb-n1 pt-1">
+                <a href="#" data-menu="menu-signin" class="text-center font-11 color-gray2-dark">Já tem uma conta? Entre aqui.</a>
+            </p>
+            <a href="#" class="btn btn-full btn-m shadow-l rounded-s font-600 bg-blue-dark mt-4">Cadastro</a>
+        </div>
+    </div>            
+
+
+    <!-- Main Menu--> 
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+    
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
